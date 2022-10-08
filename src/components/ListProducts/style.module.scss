@@ -1,0 +1,26 @@
+.Box {
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+
+    }
+}
+
+.Btn {
+    border-radius: 50% !important;
+    background-color: white !important;
+
+}
+
+.Blur {
+    user-select: none !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+
+    }
+}

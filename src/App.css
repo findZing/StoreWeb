@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.MuiToolbar-root {
+  padding: 0;
+  height: 50px !important;
+  min-height: 50px !important;
+  padding: 0 !important;
+}
+
+@media (min-width: 600px) {.MuiToolbar-root {
+    min-height: 50px !important;
+    padding: 0  !important;
+}}

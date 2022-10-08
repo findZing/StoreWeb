@@ -1,0 +1,90 @@
+.Main {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    
+    img {
+        position: absolute;
+        /* width: 100%;
+        height: 100%; */
+        width:  100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+
+.next,
+.prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+
+    &:hover{
+        background-color: #fff;
+        color: #000
+    }
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+
+
+.GroupBtns{
+
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: row;
+
+    .Btn{
+        
+        font-size: 2rem;
+        padding: 4px 8px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: white;
+        margin: 0 16px;
+        cursor:pointer;
+        
+        &:hover{
+            background-color: #fff;
+            color: #000
+        }
+    }
+}
+
+.action {
+    background-color: #fff !important;
+
+}
+
+.blur {
+    background-color: rgba(0,0,0, 0.8)  !important;
+}
